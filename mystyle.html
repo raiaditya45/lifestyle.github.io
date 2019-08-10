@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+   body {
+      background-image: url("intro.jpg");
+      background-repeat: no-repeat;
+      
+
+    } 
+    
+    #content {
+      background-color: black;
+      height: 250px;
+      width: 500px;
+      padding: 40px;
+      margin-top: 160px;
+      opacity: 0.7;
+      border: 1px solid black;
+      float:left;
+      margin-left:20px;
+
+    }
+
+    #front {
+      height: 331px;
+      margin-top: 80px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: red;
+      border: none;
+      border-radius: 15px;
+    }  
+    .form-horizontal{
+        float:right;
+        margin-top:-300px;
+        width:500px;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top"></class> 
+    <div class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Lifestyle store</a>
+    </div>
+    <div class="nav navbar-nav navbar-right">
+        <li ><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+        
+    </div>
+    </div>
+    </nav>
+    <div id="front">
+              <div id="content">
+                <h1 style="color:white">We sell Lifestyle</h1>
+                <h4 style="color:white">Flat 40% off on all premium brand</h4>
+                <button class="button">Click Me</button>
+              </div>
+        </div>
+        
+        <div class="container login-container;">
+                <form class="form-horizontal ">
+                    <h1 style= "color:green"> Sign up</h1>
+                        
+                  <div class="form-group">
+                    <div class="col-sm-7">
+                      <input type="name" class="form-control" id="name" placeholder="Enter your name" name="name" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-7">          
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-7">          
+                      <input type="contact" class="form-control" id="contact" placeholder="Enter your contact number" name="contct">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  <div class="col-sm-7">          
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter your passward" name="pwd">
+                  </div>
+                </div>
+                <div class="form-group">
+                <div class="col-sm-7">          
+                  <input type="city" class="form-control" id="city" placeholder="Enter your city" name="city">
+                </div>
+              </div>
+              <div class="form-group">
+                    <div class="col-sm-7">          
+                      <input type="address" class="form-control" id="address" placeholder="Enter your address" name="address">
+                    </div>
+                  </div>
+                  <div class="form-group">        
+                    <div class=" col-sm-7">
+                      <a href ="index.html"><button type="button" class="btn btn-primary">Submit</button></a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+        
+    </body>
+    </html>
