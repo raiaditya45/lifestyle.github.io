@@ -10,8 +10,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
+  .row .container .container-fluid{
+    margin:0;
+    padding: 0;
+  }
 body{
   background-color:white;
+  overflow-x: hidden;
 }
   .navbar{ 
     background-color:white;
@@ -29,6 +34,11 @@ body{
 .navbar-inverse .navbar-nav li a:hover {
 	
 	height: 100%;
+}
+
+.navbar-toggle { width: 15%; 
+  background-color: #555; 
+  overflow: auto;
 }
    .jumbotron{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,239,132,1) 0%, rgba(247,198,169,1) 54.2%, rgba(21,186,196,1) 100.3% );
@@ -62,10 +72,10 @@ body{
     margin-top:15px; 
 	} 
 #demo{
-  width: 450px;
-  border-bottom:3px solid yellow;
-  margin-bottom: 25px;
-  font-size:250%;
+  width: 320px;
+  border-bottom: 3px solid yellow;
+  margin-bottom: 15px;
+  font-size:200%;
 }
 .hovereffect {
   width: 100%;
@@ -426,7 +436,7 @@ ul{
 <h1 class="uu">Top Categories</h1>
 </center>
 <div class="container">
-        <div class="row">
+        <div class="row no-gutter">
             <div class="col-md-4 col-sm-4 col-xs-4">
                 <div class="hovereffect">
                     <img class="img-responsive" style="height:207px; width:105%;" src="watch.jpg" alt="">
@@ -454,7 +464,7 @@ ul{
           </div>
         </div>
 <div class="container">
-    <div class="row">
+    <div class="row no-gutters">
         <div class="col-md-4 col-sm-4 col-xs-4">
             <div class="hovereffect">
                 <img class="img-responsive"style="height:203px; width:100%;" src="sho.jpg" alt="">
@@ -481,7 +491,7 @@ ul{
         </div>
       </div>
 </div>
-              <center>
+               <center>
                              <h1 id="demo"></h1>
                 <script>
                 var countDownDate = new Date("Aug 20, 2020 19:37:25").getTime();
@@ -491,7 +501,7 @@ ul{
                   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                  document.getElementById("demo").innerHTML = "New Launch In:" + hours + "h"
+                  document.getElementById("demo").innerHTML = "Launching In:" + hours + "h"
                   + minutes + "m " + seconds + "s ";
                   if (distance < 0) {
                     clearInterval(x);
@@ -499,10 +509,10 @@ ul{
                   }
                 }, 1000);
                 </script>
-                </center>
+                </center> 
   
-          <ul class="row">
-                <li class="col-md-2 col-sm-2 col-xs-2 ">
+          <ul class="row no-gutters">
+                <li class="col-md-2 col-sm-2 col-xs-2 col-md-offset-1 ">
                 <img class="img-circle img-responsive" src="new.jpg" alt="Card image cap" >
                 <div class="card-body">
                   <h5 class="card-title"></h5>
@@ -530,44 +540,41 @@ ul{
                       <p class="card-text"> </p>
                     </div>
                   </li>
-                  <li class="col-md-2 col-sm-2 col-xs-2">
+                <!---- <li class="col-md-2 col-sm-2 col-xs-2">
                       <img class="img-circle img-responsive" src="new4.jpg" alt="Card image cap" >
                       <div class="card-body">
                         <h5 class="card-title"></h5>
                         <p class="card-text"> </p>
                       </div>
-                    </li>
-            <div class="col-md-2 col-sm-2 col-xs-2">
+                    </li>-->
+            <li class="col-md-2 col-sm-2 col-xs-2">
                 <img class="img-circle img-responsive" src="new5.jpg" alt="Card image cap" >
                 <div class="card-body">
                   <h5 class="card-title"></h5>
                   <p class="card-text"> </p>
-                </div>
-              </div>
-            </div>
                   </div>
+                  </li>
                 </ul>
-              </div>
-            </section>
+            
                     <center>
                   <h1 class="iu">Hot Right Now</h1>
                   </center>
                   <div class="container">
-                      <div class="row">
-                        <li class="col-md-6 col-sm-6 col-xs-6 ">
-                          <img class="img-responsive" src="wo.webp" alt="Card image cap" >
+                      <div class="row no-gutters">
+                        <div class="col-md-6 col-sm-6 col-xs-6 ">
+                          <img class="img-responsive" src="wo.webp">
                           <div class="card-body">
                             <h5 class="card-title"></h5>
                             <p class="card-text"> </p>
                           </div>
-                        </li>
-                        <li class="col-md-6 col-sm-6 col-xs-6 ">
-                          <img class="img-responsive" src="bo.webp" alt="Card image cap">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 ">
+                          <img class="img-responsive" src="bo.webp">
                           <div class="card-body">
                             <h5 class="card-title"></h5>
                             <p class="card-text"> </p>
                           </div>
-                        </li>
+                        </div>
                           </div>
                           </div>
                     <div class="container">
@@ -577,7 +584,7 @@ ul{
                     <h2 style="color:tomato">If Both Number Matches Then you will something Special</h2>
                     </center>
                     <div class="container">
-                      <div class="row">
+                      <div class="row no-gutters">
                         <center>
                     <div class="col-md-4 col-sm-4 col-xs-4">          
 <button class="btn btn-success" style="height:30px; width:50%;" onclick="document.getElementById('myImage').src='5.gif'">1st </button>
@@ -585,7 +592,7 @@ ul{
 </center>
 <center>
 <div class="col-md-4 col-sm-4 col-xs-4">
-<img class="img-responsive" src="winner.gif" style="width:250px">
+<img id="myImage" class="img-responsive" src="winner.gif" style="width:250px">
 </div>
 </center>
 <center>
@@ -602,17 +609,17 @@ ul{
     <div class="row heading heading-icon">
         <h2 style="color:green">Our Team</h2>
     </div>
-    <ul class="row">
+    <ul class="row no-gutters">
       <li class=" col-md-4 col-sm-4 col-xs-4">
           <div class="cnt-block equal-hight" style="height: 299px;">
-            <figure><img src="ad2.jpg" class="img-responsive" alt=""></figure>
+            <img src="ad2.jpg" class="img-responsive" alt="">
             <h3><a href="#">Kappua </a></h3>
             <p>Delivery Head</p>
           </div>
       </li>
       <li class=" col-md-4 col-sm-4 col-xs-4">
           <div class="cnt-block equal-hight" style="height: 299px;">
-            <figure><img src="ad.jpg"  class="img-responsive" alt=""></figure>
+            <img src="ad.jpg"  class="img-responsive" alt="">
             <h3><a href="">Mr. Cool </a></h3>
             <p>Managing Head</p>
             <ul class="follow-us clearfix">
@@ -622,7 +629,7 @@ ul{
        </li>
       <li class=" col-md-4 col-sm-4 col-xs-4">
           <div class="cnt-block equal-hight" style="height: 299px;">
-            <figure><img src="kat.jpg" class="img-responsive" alt=""></figure>
+            <img src="kat.jpg" class="img-responsive" alt="">
             <h3><a href="">Mrs. Sexy </a></h3>
             <p>Commercial Head</p>
             <ul class="follow-us clearfix">
@@ -650,9 +657,9 @@ ul{
   </script>
 <footer id="footer" class="clearfix">
       <div id="footer-widgets">
-        <div class="container">
+        <div class="container-fluid">
         <div id="footer-wrapper">
-          <div class="row">
+          <div class="row no-gutters">
             <div class="col-sm-6 col-md-2">
               <div id="meta-3" class="widget widgetFooter widget_meta">
               <h4 class="widgettitle">Importent Page :</h4>
@@ -679,7 +686,7 @@ ul{
 				</ul>
 		</div>            </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-6">
               <div id="meta-4" class="widget widgetFooter widget_meta">
               <h4 class="widgettitle">Subscribe :</h4>
 
@@ -704,7 +711,7 @@ ul{
               </div>
              </div> 
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-6">
               <div id="search-3" class="widget widgetFooter widget_search"><h4 class="widgettitle">Search in Lifestyle :</h4>
 
                 <div class="form-group">
@@ -727,7 +734,7 @@ ul{
 
       <div id="sub-floor">
         <div class="container">
-          <div class="row">
+          <div class="row no-gutters">
             <div class="col-md-4 copyright">
              Copy right for lifestyle © 2015
             </div>
